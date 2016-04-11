@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="css/remodal.css">
     <link rel="stylesheet" href="css/remodal-default-theme.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    
 
 </head>
 <body>
@@ -47,7 +49,7 @@
 	                </div>
 				</div>
 				<div class="header-img">
-				<img src="images/header-img.png" alt="header-img" class=" hidden-xs hidden-sm">
+					<img src="images/header-img.png" alt="header-img" class=" hidden-xs hidden-sm">
 				</div>
 	            <div class="header__baground-mid">
 	                <div class="mid-headline col-xs-12">
@@ -283,9 +285,10 @@
 				</div>
 			</div>
 			<!-- If we need navigation buttons -->
+			
+		</div>
 			<div class="swiper-button-prev"></div>
     		<div class="swiper-button-next"></div>
-		</div>
 	</div>
 </section>
 
@@ -332,20 +335,99 @@
 					</div>
 				</div>
 			</div>
+			
+		</div>
 			<div class="swiper--prev"></div>
-    		<div class="swiper--next"></div>
-		</div>	
+    		<div class="swiper--next"></div>	
 	</div>
 </section>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<section class="certificates">
+	<div class="container">
+		<h2>сертификаты</h2>
+		<div class="row certificates__row">
+			
+				<div class="col-xs-12 col-sm-6 col-md-3 certificates__item">
+					<a href="#" data-remodal-target="certificates-1" class="certificates__img"><img src="images/certificates__img-1.jpg" alt="certificates__img-1"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 certificates__item">
+					<a href="#" data-remodal-target="certificates-2" class="certificates__img"><img src="images/certificates__img-2.jpg" alt="certificates__img-2"></a>
+				</div>			
+				<div class="col-xs-12 col-sm-6 col-md-3 certificates__item">
+					<a href="#" data-remodal-target="certificates-3" class="certificates__img"><img src="images/certificates__img-3.jpg" alt="certificates__img-3"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 certificates__item">
+					<a href="#" data-remodal-target="certificates-4" class="certificates__img"><img src="images/certificates__img-4.jpg" alt="certificates__img-4"></a>
+				</div>
+			
+		</div>
+	</div>
+</section>
 
-<script src="js/all.js"></script>
+
+<section class="hours">
+	<div class="container">
+		<h2>как решить проблему за <span class="hours__one">24</span> <span class="hours__two">часа</span><br>
+		не выходя из дома?</h2>
+		<div class="row hours-row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="col-xs-12 col-sm-6 hours__item hours__item-1">
+					<div class="wow bounceIn round"></div>
+					<img src="images/hours-1.png" alt="">
+					<h3>вы заходите<br>на сайт</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 hours__item hours__item-1">
+					<div class="wow bounceIn round" data-wow-delay="0.5s"></div>
+					<img src="images/hours-2.png" alt="">
+					<h3>оставляете<br>заявку</h3>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="col-xs-12 col-sm-6 hours__item hours__item-1">
+					<div class="wow bounceIn round" data-wow-delay="0.8s"></div>
+					<img src="images/hours-3.png" alt="">
+					<h3>в течении 1 минуты<br>с вами связывается<br>наш менеджер</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 hours__item">
+					<div class="wow bounceIn round" data-wow-delay="1s"></div>
+					<img src="images/hours-4.png" alt="">
+					<h3>мы понимаем,<br>как решить<br>вашу проблему</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<div data-remodal-id="certificates-1" class="remodal certificates-remodal" style="padding-top: 20px">
+    <img src="images/certificates-1.jpg" style="width: 550px; height: 800px;" alt="certificates-1">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+</div>
+<div data-remodal-id="certificates-2" class="remodal certificates-remodal" style="padding-top: 20px">
+    <img src="images/certificates-2.jpg" style="width: 500px; height: 800px;" alt="certificates-2">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+</div>
+<div data-remodal-id="certificates-3" class="remodal certificates-remodal" style="padding-top: 20px">
+    <img src="images/certificates-3.jpg" style="width: 500px; height: 800px;" alt="certificates-3">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+</div>
+<div data-remodal-id="certificates-4" class="remodal certificates-remodal" style="padding-top: 20px">
+    <img src="images/certificates-4.jpg" style="width: 500px; height: 800px;" alt="certificates-4">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+</div>
+
+
 <script src="libs/jquery.min.js"></script>
+<script src="libs/remodal.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="libs/jquery.counterup.min.js"></script>
 <script src="libs/swiper.min.js"></script>
+<script src="libs/wow.min.js"></script>
+<script src="js/all.js"></script>
+
 <!--
 <script>
     jQuery(document).ready(function( $ ) {
@@ -356,6 +438,9 @@
     });
 </script>
 -->
+<script>
+	new WOW().init();
+</script>
 
 <script>
     var swiper = new Swiper('.swiper-clients', {
