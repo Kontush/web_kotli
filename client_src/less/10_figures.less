@@ -1,0 +1,55 @@
+.figures {
+	width: 100%;
+    min-height: 646px;  
+	background: url("@{dir}figures.jpg") no-repeat bottom center; 
+	background-size: cover;
+	padding-top: 80px;
+	h2 {
+		color: #fff;
+		margin-bottom: 115px;
+	}
+	&__item-1 {
+		position: relative;
+		&:after {
+				content: "";
+				display: block;
+				position: absolute;
+			    top: 80px;
+			    left: 220px;
+			    border-bottom: 2px solid #ff5d22;
+			    width: 140px;
+			    @media @mobile {
+					display: none;
+				}
+				@media @tablet {
+					display: none;
+				}
+				@media @desktop {
+					display: none;
+				}
+				@media @desktop-xl {
+					display: block;
+				}
+			}
+	}
+	&__item {
+		position: relative;
+		text-align: center;
+		margin-bottom: 10px;
+		h3 {
+			font-size: 120px;
+			font-weight: 700;
+			color: #fff;
+			text-transform: uppercase;	
+		}
+		h4 {
+			font-size: 15px;
+			font-weight: 400;
+			color: #fff;
+			text-transform: uppercase;
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+}

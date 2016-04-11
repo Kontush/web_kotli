@@ -1,0 +1,465 @@
+.header {
+	margin-bottom: 150px;
+
+	&__baground {
+		width: 100%;
+	    max-height: 660px;  
+		background: url("@{dir}header.jpg") no-repeat bottom center; 
+		background-size: cover;
+		padding-top: 40px;
+		
+		&-top {
+			text-align: center;
+		}
+		&-logo {
+			display: inline-block;
+			vertical-align: top;
+			width: 160px;
+			height: 65px;
+			margin-left: 25px;
+			margin-right: 420px;
+			.logo img {
+				width: 100%;
+			}
+			@media @mobile {
+				width: 70px;
+				height: 20px;
+				margin-left: 5px;
+				margin-right: 5%;
+			}
+			@media @tablet {
+				width: 140px;
+				height: 45px;
+				margin-left: 25px;
+				margin-right: 10%;
+			}
+			@media @desktop {
+				width: 150px;
+				height: 65px;
+				margin-left: 25px;
+				margin-right: 220px;
+			}
+			@media @desktop-xl {
+				width: 160px;
+				height: 65px;
+				margin-left: 25px;
+				margin-right: 420px;
+			}
+		}
+
+		.city {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 145px;
+			margin-top: 15px;
+			@media @mobile {
+				margin-right: 10%;
+				margin-top: 0;
+			}
+			@media @tablet {
+				margin-right: 80px;
+			}
+			@media @desktop {
+				margin-right: 145px;
+			}
+			.maps {
+				background: url("@{dir}city.png") no-repeat left center;
+				display: inline-block;
+				vertical-align: top;
+				font-size: @fss;
+				font-weight: 400;
+				color: #fff;
+				line-height: 1.5;
+				margin-right: 15px;
+				padding-left: 25px;
+
+				@media @mobile {
+					margin-right: 5px;
+					padding-top: 10px;
+					min-height: 30px;
+					font-size: 10px;
+				}
+				@media @tablet {
+					line-height: 1.5;
+					font-size: 17px;
+				}
+				@media @desktop {
+					
+					font-size: @fss;
+				}
+			}
+			.phone {
+				display: inline-block;
+				vertical-align: top;
+				font-size: @fss;
+				font-weight: 400;
+				color: #fff;
+				line-height: 1.5;
+				@media @mobile {
+					padding-top: 10px;
+					font-size: 10px;
+				}
+				@media @tablet {
+					font-size: 17px;
+				}
+				@media @desktop {
+					font-size: @fss;
+				}
+			}
+		}
+
+		&-contacts {
+			display: inline-block;
+			vertical-align: top;
+			.langs li {
+				display: inline-block;
+				vertical-align: top;
+				list-style-type: none;
+				margin-left: 10px;
+					@media @mobile {	
+						margin-left: 4px;
+						margin-top: -7px;
+					}
+					@media @tablet {
+						padding-top: 5px;
+						margin-left: 10px;
+					}
+					
+				a {
+					font-size: 13px;
+					font-weight: 400;
+					color: #d2b9aa;
+					text-transform: uppercase;
+					&:hover {
+						text-decoration: underline;
+					}
+					@media @mobile {
+						font-size: 9px;
+						
+					}
+					@media @tablet {
+						font-size: 11px;
+					}
+					@media @desktop {
+						font-size: 13px;
+					}
+					a:visited {
+					    color: #fff;
+					}
+			}
+			}
+		}
+		.header-img {
+			display: inline-block;
+			vertical-align: top;
+			height: auto;
+			margin-left: -150px;
+			margin-top: -60px;
+			margin-right: -120px;
+			margin-bottom: -188px;
+			img {
+				width: 100%;
+			}
+			@media @mobile {
+				width: 600px;
+			}
+			@media @tablet {
+				width: 600px;
+
+			}
+			@media @desktop {
+				width: 600px;
+			}
+			@media @desktop-xl {
+				width: 784px;
+			}
+		}
+			
+		&-mid {
+			width: 580px;
+			display: inline-block;
+			vertical-align: top;
+			padding-left: 45px;
+			
+			@media @mobile {
+				width: 385px;
+				text-align: center;
+			}
+			@media @tablet {
+				width: 580px;
+			}
+			@media @desktop {
+				text-align: left;
+			}
+			h1 {
+				padding-top: 80px;
+				margin: 0;
+				@media @mobile {
+					font-size: 30px;
+				}
+				@media @tablet {
+					font-size: 60px;
+
+				}
+				@media @desktop {
+					font-size: 60px;
+				}
+				@media @desktop-xl {
+					font-size: 60px;
+				}
+				span {
+					font-size: 52px;
+					@media @mobile {
+						font-size: 25px;
+					}
+					@media @tablet {
+						font-size: 52px;
+
+					}
+					@media @desktop {
+						font-size: 52px;
+					}
+					@media @desktop-xl {
+						font-size: 52px;
+					}
+				}
+			}
+			.mid-text {
+				font-size: 28px;
+				color: #fff;
+				font-size: 52px;
+					@media @mobile {
+						font-size: 18px;
+					}
+					@media @tablet {
+						font-size: 25px;
+
+					}
+					@media @desktop {
+						font-size: 28px;
+					}
+					@media @desktop-xl {
+						font-size: 28px;
+					}
+			}
+		}
+		.guarantee-item {
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 30px;
+			p {
+				font-size: 60px;
+				font-weight: 700;
+				color: #fff;
+				margin-bottom: 0;
+				line-height: 1;
+				@media @mobile {
+					font-size: 30px;
+				}
+				@media @tablet {
+					font-size: 60px;
+
+				}
+				@media @desktop {
+					font-size: 60px;
+				}
+				@media @desktop-xl {
+					font-size: 60px;
+				}
+				span {
+					font-size: 27px;
+					text-transform: uppercase;
+					@media @mobile {
+					font-size: 15px;
+					}
+					@media @tablet {
+						font-size: 27px;
+
+					}
+					@media @desktop {
+						font-size: 27px;
+					}
+					@media @desktop-xl {
+						font-size: 27px;
+					}
+				}
+			}
+			.year-2 {
+				font-weight: 400;
+				font-size: 31px;
+				@media @mobile {
+				font-size: 15px;
+				}
+				@media @tablet {
+					font-size: 31px;
+
+				}
+				@media @desktop {
+					font-size: 31px;
+				}
+				@media @desktop-xl {
+					font-size: 31px;
+				}
+			}
+			.day-2 {
+				font-weight: 400;
+				font-size: 25px;
+				@media @mobile {
+				font-size: 15px;
+				}
+				@media @tablet {
+					font-size: 25px;
+
+				}
+				@media @desktop {
+					font-size: 25px;
+				}
+				@media @desktop-xl {
+					font-size: 25px;
+				}
+			}
+			.day-3 {
+				font-weight: 400;
+				font-size: 19px;
+				@media @mobile {
+					font-size: 15px;
+				}
+				@media @tablet {
+					font-size: 19px;
+				}
+				@media @desktop {
+					font-size: 19px;
+				}
+				@media @desktop-xl {
+					font-size: 19px;
+				}
+			}
+		}
+		.guarantee-1 {
+			padding-left: 50px;
+			margin-right: 60px;
+			background: url("@{dir}guarantee-1.png") no-repeat left center;
+		}
+		.guarantee-2 {
+			padding-left: 60px;
+			background: url("@{dir}guarantee-2.png") no-repeat left center;
+		}
+		&-bot {
+			width: 100%;
+			background: #e64308;
+			padding: 45px 0 45px 0;
+			height: auto;
+
+			.header-bot-text {
+				width: 700px;
+				display: inline-block;
+				vertical-align: top;
+				text-align: right;
+				margin-left: 200px;
+				@media @mobile {
+					text-align: left;
+					margin-left: 30px;
+					width: 300px;
+				}
+				@media @tablet {
+					text-align: left;
+					margin-left: 30px;
+					width: 700px;
+				}
+				@media @desktop {
+					text-align: right;
+					margin-left: 200px;
+					width: 700px;
+				}
+
+				
+				h2 {
+					font-size: 40px;
+					font-weight: 700;
+					color: #fff;
+					margin: 0;
+					line-height: 1.1;
+					text-align: right;
+					@media @mobile {
+						text-align: left;
+						font-size: 20px;
+					}
+					@media @tablet {
+						text-align: left;
+						font-size: 40px;
+					}
+					@media @desktop {
+						text-align: right;
+						font-size: 40px;
+					}
+					@media @desktop-xl {
+						text-align: right;
+						font-size: 40px;
+					}
+				}
+				p {
+
+					font-size: 18px;
+					font-weight: 400;
+					color: #fff;
+					@media @mobile {
+						font-size: 12px;
+						width: 300px;
+						margin-bottom: 15px;
+					}
+					@media @tablet {
+						font-size: 18px;
+						width: 700px;
+					}
+					@media @desktop {
+						font-size: 18px;
+						width: 700px;
+					}
+					@media @desktop-xl {
+						font-size: 18px;
+						width: 700px;
+					}
+				}
+			}
+			.header-bot-btn {
+				width: 235px;
+				float: right;
+				display: inline-block;
+				vertical-align: top;
+				margin-left: 30px;
+				@media @mobile {
+					float: left;
+				}
+				@media @tablet {
+					float: left;
+				}
+				@media @desktop {
+					float: right;
+				}
+				@media @desktop-xl {
+					float: right;
+				}
+				.btn-yellow {
+					margin-top: 5px;
+					width: 235px;
+					height: 59px;
+					font-size: 20px;
+					font-weight: 400;
+					color: #5a4208;
+					line-height: 59px;
+					background: #ffbc17;
+					border-radius: 5px;
+					border-bottom: 1px solid #982d0b;
+					
+
+				}
+				.btn-yellow:hover {
+					background: #e78609;
+					border-bottom: none;
+				}
+			}
+		}
+
+	
+	}
+}

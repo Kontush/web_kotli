@@ -1,0 +1,98 @@
+.clients {
+	padding: 55px 0 75px;
+	background: #e9e9e9;
+	h2 {
+		margin-bottom: 65px;
+		@media @mobile {
+			font-size: 2.5rem;
+		}
+		@media @tablet {
+			font-size: 4rem;
+		}
+		@media @desktop {
+			font-size: 4.5rem;
+		}
+	}
+	&__item {
+		img {
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+			filter: grayscale(100%);
+			filter: url(grayscale.svg); /* Firefox 4+ */
+			&:hover {
+			cursor: pointer;
+			-webkit-filter: grayscale(0);
+			-moz-filter: grayscale(0);
+			-ms-filter: grayscale(0);
+			-o-filter: grayscale(0);
+			filter: grayscale(0);	
+			}
+		}
+
+	}
+	.swiper-button-prev,
+	.swiper-container-rtl .swiper-button-next {
+	  background-image: url("../images/prev.png");
+	  left: 10px;
+	  right: auto;
+	  &:hover {
+	  	background-image: url("../images/prev-hover.png");
+	  }
+	  &:active {
+	  	background-image: url("../images/prev-activ.png");
+	  }
+
+	}
+	.swiper-button-next,
+	.swiper-container-rtl .swiper-button-prev {
+	  background-image: url("../images/next.png");
+	  right: 10px;
+	  left: auto;
+	  &:hover {
+	  	background-image: url("../images/next-hover.png");
+	  }
+	  &:active {
+	  	background-image: url("../images/next-activ.png");
+	  }
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+	  position: absolute;
+	  top: 50%;
+	  width: 64px;
+	  height: 64px;
+	  margin-top: -22px;
+	  z-index: 10;
+	  cursor: pointer;
+	  -moz-background-size: 64px 64px;
+	  -webkit-background-size: 64px 64px;
+	  background-size: 64px 64px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	}
+	.swiper-wrapper {
+		
+		text-align: center;
+		.swiper-slide {
+			position: relative;
+		img {
+			width: 100%;
+			height: 150px;
+			@media @mobile {
+				height: auto;
+			}
+			@media @tablet {
+				height: 100px;
+			}
+			@media @desktop {
+				height: 150px;
+			}
+		}
+		
+	}
+	}
+	
+}

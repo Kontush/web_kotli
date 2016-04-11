@@ -1,0 +1,117 @@
+.problems {
+	padding-top: 50px;
+	h2 {
+		@media @mobile {
+			font-size: 2.5rem;
+		}
+		@media @tablet {
+			font-size: 4.5rem;
+		}
+	}
+	h3 {
+		@media @mobile {
+			font-size: 2.5rem;
+		}
+		@media @tablet {
+			font-size: 3.5rem;
+		}
+	}
+	img {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__row-item {
+		@media @mobile {
+			text-align: center;
+		}
+		@media @tablet {
+			text-align: left;
+		}
+		@media @desktop {
+			text-align: left;
+		}
+	}
+	.row-img {
+		margin-right: 28px;
+	}
+	&__row {
+		margin-top: 50px;
+		padding-left: 140px;
+		@media @mobile {
+			padding-left: 50px;
+		}
+		@media @tablet {
+			padding-left: 0px;
+		}
+		@media @desktop {
+			padding-left: 140px;
+		}
+	}
+	
+	.line {
+		border-bottom: 1px solid #cccccc ;
+	}
+	&__caption {
+		display: inline-block;
+		vertical-align: top;
+		width: 425px;
+		margin-bottom: 10px;
+		@media @mobile {
+			width: 325px;	
+		}
+		@media @tablet {
+			width: 355px;	
+		}
+		@media @desktop {
+			width: 425px;
+		}
+		h4 {
+			font-weight: 700;
+			font-size: 2rem;
+			text-transform: uppercase;
+			line-height: 1.4;
+			img {
+				width: 150px;
+				height: 35px;
+			}
+		}
+		p {
+			font-size: 1.5rem;
+			margin-top: 20px;
+		}
+	}
+	
+	&__row-btn {
+		display: inline-block;
+		vertical-align: top;
+
+		@media @mobile {
+			text-align: center;
+		}
+		@media @desktop {
+			text-align: left;
+		}
+
+		.btn-orange {
+			display: inline-block;
+			vertical-align: top;
+			width: 262px;
+			height: 59px;
+			font-size: 20px;
+			font-weight: 400;
+			color: #fff !important;
+			line-height: 59px;
+			background: #ff6212;
+			border-radius: 5px;
+			border-bottom: 1px solid #982d0b;
+			margin-top: 40px;
+			margin-bottom: 10px;
+			&:hover {
+				background: #b6430b;
+				border: none;
+			}
+		}
+
+		
+	}
+}
