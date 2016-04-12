@@ -4,15 +4,17 @@
 	}
 	background:url("@{dir}reviews.jpg") no-repeat bottom center;
 	@media @mobile {
+		background: #dcdcdc;
 		padding-bottom: 50px;
 		padding-top: 40px;
 	}
 	@media @tablet {
+		background:url("@{dir}reviews.jpg") no-repeat bottom center;
 		padding-bottom: 15px;
 		padding-top: 10px;
 	}
 	@media @desktop-xl {
-		padding-bottom: 50px;
+		padding-bottom: 22px;
 		padding-top: 40px;
 	}
 	h2 {
@@ -25,7 +27,7 @@
 			font-size: 4rem;
 		}
 		@media @desktop {
-			margin-bottom: 35px;
+			margin-bottom: 6px;
 			font-size: 4rem;
 		}
 		@media @desktop-xl {
@@ -64,6 +66,10 @@
 			padding-top: 25px;
 			@media @desktop {
 				width: 640px;
+				padding: 19px 5px;
+			}
+			@media @desktop-xl {
+				width: 640px;
 				padding: 25px 5px;
 			}
 			
@@ -84,11 +90,14 @@
 				font-style: italic;
 				color: #e4470f;
 				margin-bottom: 35px;
-				@media @mobile {
+
+				@media @desktop {
 					text-align: center;
+					margin-bottom: 25px;
 				}
 				@media @desktop-xl {
 					text-align: left;
+					margin-bottom: 35px;
 				}
 			}
 			p {
@@ -98,10 +107,10 @@
 				line-height: 1.4;
 				padding-left: 35px;
 				margin-bottom: 10px;
-
-				@media @desktop-xl {
+				@media @mobile {
 					text-align: left;
 				}
+				
 				&:after {
 					content: "";
 					display: block;
@@ -157,6 +166,9 @@
 			left: 40px;
 		}
 		@media @tablet {
+			left: 30px;
+		}
+		@media @desktop-xl {
 			left: -65px;
 		}
 	  &:hover {
@@ -175,6 +187,9 @@
 			right: 40px;
 		}
 		@media @tablet {
+			right: 30px;
+		}
+		@media @desktop-xl {
 			right: -65px;
 		}
 	  &:hover {

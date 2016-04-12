@@ -28,7 +28,7 @@
 
 
 
-<header class="header">
+<header id="header" class="header">
 		<div class="header__baground">
 			<div class="container">
 				<div class="header__baground-top col-xs-12">
@@ -38,13 +38,13 @@
 	    				</a>
 	                </div>
 	                <div class="city">
-	                    <p class="maps">Львов</p>
+	                    <p id="user-city" class="maps"></p>
 	                    <p class="phone">+38 <b>(098)</b> 131-36-39</p>
 	                </div>
 					<div class="header__baground-contacts">
 	                    <ul class="langs">
-	                        <li><a class="active" href="index.html">Укр</a></li>
-	                        <li><a href="index-ru.html">Рус</a></li>
+	                        <li><a href="index-ua.html">Укр</a></li>
+	                        <li><a href="index.html" class="active">Рус</a></li>
 	                    </ul>
 	                </div>
 				</div>
@@ -78,14 +78,14 @@
 	                    <p>и мы поможем Вам решить проблему неисправного котла в течении 24 часов</p>
 	                </div>
 	                <div class="header-bot-btn col-xs-12 col-sm-3">
-	                	<a href="" class="btn btn-yellow">Оставить заявку</a>
+	                	<a href="#" data-remodal-target="modal-call-back" class="btn btn-yellow">Оставить заявку</a>
 	                </div>
 	            </div>
             </div>
 		</div>
 </header>
 
-<section class="promo">
+<section id="promo" class="promo">
 	<div class="container">
 		<h2>если вы столкнулись</h2>
 		<h3>с такими проблемами, как...</h3>
@@ -114,7 +114,7 @@
 </section>
 
 
-<section class="problems">
+<section id="problems" class="problems">
 	<div class="container">
 		<h2>мы поможем</h2>
 		<h3>решить эти проблемы</h3>
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4 problems__row-btn">
-				<a href="" class="btn btn-orange">Вызвать специалиста</a>
+				<a href="#" data-remodal-target="modal-call-back-2" class="btn btn-orange">Вызвать специалиста</a>
 			</div>
 		</div>
 	</div>
@@ -142,7 +142,7 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4 problems__row-btn">
-				<a href="" class="btn btn-orange">Подобрать запчасти</a>
+				<a href="#" data-remodal-target="modal-call-back-3" class="btn btn-orange">Подобрать запчасти</a>
 			</div>
 		</div>
 	</div>
@@ -150,7 +150,7 @@
 
 
 
-<section class="figures">
+<section id="figures" class="figures">
 	<div class="container">
 		<h2><img src="images/figures-img.png" alt="figures-img"> в цифрах</h2>
 		<div class="row figures-row">
@@ -179,7 +179,7 @@
 </section>
 
 
-<section class="cooperation">
+<section id="cooperation" class="cooperation">
 	<div class="container">
 		<h2>работая с нами</h2>
 		<h3>вы получите комплекс преимуществ:</h3>
@@ -222,7 +222,7 @@
 
 
 
-<section class="sixteen-years">
+<section id="sixteen-years" class="sixteen-years">
 	<div class="container">
 		<h2>за 16 лет работы
 		<span>мы создали тепло и уют в:</span></h2>
@@ -260,7 +260,7 @@
 </section>
 
 
-<section class="clients">
+<section id="clients" class="clients">
 	<div class="container">
 		<h2>наши клиенты</h2>
 		<div class="swiper-container swiper-clients">
@@ -293,7 +293,7 @@
 </section>
 
 
-<section class="reviews">
+<section id="reviews" class="reviews">
 	<div class="container">
 		<h2>отзывы о нас</h2>
 		<div class="swiper-container swiper-reviews">
@@ -305,7 +305,8 @@
 					<div class="swiper-reviews__content">
 						<h3>Виктор <br>Александрович</h3>
 						<h4>специалист по ремонту отопительных систем</h4>
-						<p>Котел просто супер. Те кто пишет о большом расходе газа, запомните, вызовите толкового наладчика, отрегулируйте мощность по площади отапливаемого помещения. У меня суммарный расход газа за 10+11+12 месяц 2015 года составил 400-450 кубов, и это с подогревом воды и плита!!!!</p>
+						<p> Я работаю в данной сфере более 10 лет. Вопрос поиска запасных частей всегда был проблемой, так как в Украине очень сложно найти комплектующие, а темболее оригинальные запчасти компании Viessmann.<br>С появлением данного сервиса поиск необходимых запчастей ускорился. Специалисты быстро подбирают запчасть и отправляют в мой город почтой. Регулярно сотрудничаю с компанией, очень доволен. Рекомендую.</p>
+
 					</div>
 					<div class="swiper-reviews__block">
 						<div class="swiper-reviews__img">
@@ -318,19 +319,38 @@
 				</div>
 				<div class="swiper-slide">
 					<div class="swiper-reviews__photo">
-						<img src="images/reviews__photo-1.png" alt="">
+						<img src="images/reviews__photo-2.png" alt="">
 					</div>
 					<div class="swiper-reviews__content">
-						<h3>Виктор <br>Александрович</h3>
-						<h4>специалист по ремонту отопительных систем</h4>
-						<p>Котел просто супер. Те кто пишет о большом расходе газа, запомните, вызовите толкового наладчика, отрегулируйте мощность по площади отапливаемого помещения. У меня суммарный расход газа за 10+11+12 месяц 2015 года составил 400-450 кубов, и это с подогревом воды и плита!!!!</p>
+						<h3>Олег</h3>
+						<h4>бизнесмен, живет в частном доме</h4>
+						<p>В свой дом я решил установить котел и доверил это дело компании Vistar service, потому, они сертифицированная компания Viessmann.<br>
+Качественный сервис обслуживания, бесплатная доставка порадовали. Установили котел, теперь дома тепло и уютно.Уже 3 года в работе. Жена в восторге.</p>
 					</div>
 					<div class="swiper-reviews__block">
 						<div class="swiper-reviews__img">
-							<img src="images/reviews__img-1.jpg" alt="">
+							<img src="images/reviews__img-3.jpg" alt="">
 						</div>
 						<div class="swiper-reviews__img">
-							<img src="images/reviews__img-2.jpg" alt="">
+							<img src="images/reviews__img-4.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-reviews__photo">
+						<img src="images/reviews__photo-3.png" alt="">
+					</div>
+					<div class="swiper-reviews__content">
+						<h3>Иван</h3>
+						<h4>юрист, живет в частном доме</h4>
+						<p>Долго искал компанию, которая смогла бы реанимировать мой котел. Чисто случайно попал на сайт vistar servise, и заказал вызов специалиста. В тот же день прибыл специалсит провел осмотр и выяснил причину неполадки. Исправил проблему в тот же день. Очень качественно и оперативно сработано</p>
+					</div>
+					<div class="swiper-reviews__block">
+						<div class="swiper-reviews__img">
+							<img src="images/reviews__img-5.jpg" alt="">
+						</div>
+						<div class="swiper-reviews__img">
+							<img src="images/reviews__img-6.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -343,7 +363,7 @@
 </section>
 
 
-<section class="certificates">
+<section id="certificates" class="certificates">
 	<div class="container">
 		<h2>сертификаты</h2>
 		<div class="row certificates__row">
@@ -366,7 +386,7 @@
 </section>
 
 
-<section class="hours">
+<section id="hours" class="hours">
 	<div class="container">
 		<h2>как решить проблему за <span class="hours__one">24</span> <span class="hours__two">часа</span><br>
 		не выходя из дома?</h2>
@@ -400,6 +420,61 @@
 </section>
 
 
+<section id="call" class="call">
+	<div class="container">
+		<div class="col-xs-12 col-sm-6 col-md-8 call__left">
+			<h4>просто<br>закажите звонок</h4>
+			<h5>и в течении <span>1 дня</span> ваш котел<br>снова будет работать</h5>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 call__form">
+			<h6>Оставьте заявку</h6>
+			<p>на вызов специалиста и наш менеджер<br>свяжется с Вами в течении 10 минут</p>
+			<form action="mail.php" method="post" class="main-form" name="main-form">
+                        
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Vistar">
+                <input type="hidden" name="admin_email" value="kontushsv1@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с лэндинга">
+                <input type="hidden" name="whatform" value="Модальная форма - Заявка">
+                <!-- END Hidden Required Fields -->
+
+                <div class="input-group">
+                    <input type="text" name="name" class="input" placeholder="Как Вас зовут?" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" class="input in-phone" placeholder="Куда Вам позвонить?" required>
+                </div>
+
+                <input type="hidden" name="whatform" value="Модальная форма - Заказ звонка">
+
+                <button type="submit" name="submit" class="btn btn-orange btn-form">Заказать звонок</button>
+
+            </form>
+		</div>
+	</div>
+</section>
+
+<footer id="footer" class="footer">
+	<div class="container">
+		<div class="col-xs-12 col-sm-4">
+			<div class="footer__logo">
+				<a href="#" class="footer__logo-img">
+	    			<img src="images/footer__logo.png" alt="logo">
+	    		</a>
+    		</div>
+    		<p class="footer__after-logo">© vistar-service. 2016</p>
+		</div>
+		<div class="col-xs-12 col-sm-4 footer__phone">
+			<p class="phone">+38 <b>(098)</b> 131-36-39</p>
+		</div>
+		<div class="col-xs-12 col-sm-4 footer__mail">
+			<p class="mail">Львов, ул. Джерельна, 23</p>
+			<p class="studio">Разработка: <a href="http://geniusstudio.me/">MorkoV</a></p>
+		</div>
+	</div>
+</footer>
+
+
 
 
 <div data-remodal-id="certificates-1" class="remodal certificates-remodal" style="padding-top: 20px">
@@ -419,6 +494,84 @@
     <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 </div>
 
+<div class="remodal  my-remodal" data-remodal-id="modal-call-back"> 
+    <h2>Оставьте заявку и наш менеджер <br>свяжется с Вами в течении 10 минут</h2>
+    <form action="mail.php" method="post" class="main-form" name="top-form">
+                
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Instaltherm">
+                <input type="hidden" name="admin_email" value="kontushsv1@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с лэндинга">
+                <input type="hidden" name="whatform" value="Модальная форма - получить «тепловой аудит»">
+                <!-- END Hidden Required Fields -->
+
+                <div class="input-group">
+                    <input type="text" name="name" class="input" placeholder="Введите имя" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" class="input in-phone" placeholder="Введите телефон" required>
+                </div>
+
+                <input type="hidden" name="whatform" value="Модальная форма - Консультация">
+
+                <button type="submit" name="submit" class="btn btn-orange">Оставить заявку</button>
+				<p>100% конфиденциальность личных данных</p>
+				<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </form>
+</div>
+
+<div class="remodal  my-remodal" data-remodal-id="modal-call-back-2"> 
+    <h2>Оставьте заявку на вызов специалиста и наш менеджер свяжется с Вами в течении 10 минут</h2>
+    <form action="mail.php" method="post" class="main-form" name="top-form">
+                
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Instaltherm">
+                <input type="hidden" name="admin_email" value="kontushsv1@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с лэндинга">
+                <input type="hidden" name="whatform" value="Модальная форма - получить «тепловой аудит»">
+                <!-- END Hidden Required Fields -->
+
+                <div class="input-group">
+                    <input type="text" name="name" class="input" placeholder="Введите имя" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" class="input in-phone" placeholder="Введите телефон" required>
+                </div>
+
+                <input type="hidden" name="whatform" value="Модальная форма - вызов специалиста">
+
+                <button type="submit" name="submit" class="btn btn-orange">Оставить заявку</button>
+				<p>100% конфиденциальность личных данных</p>
+				<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </form>
+</div>
+
+
+<div class="remodal  my-remodal" data-remodal-id="modal-call-back-3"> 
+    <h2>Оставьте заявку и наш менеджер <br>свяжется с Вами в течении 10 минут</h2>
+    <form action="mail.php" method="post" class="main-form" name="top-form">
+                
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Instaltherm">
+                <input type="hidden" name="admin_email" value="kontushsv1@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с лэндинга">
+                <input type="hidden" name="whatform" value="Модальная форма - получить «тепловой аудит»">
+                <!-- END Hidden Required Fields -->
+
+                <div class="input-group">
+                    <input type="text" name="name" class="input" placeholder="Введите имя" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="phone" class="input in-phone" placeholder="Введите телефон" required>
+                </div>
+
+                <input type="hidden" name="whatform" value="Модальная форма - Подобрать запчасти">
+
+                <button type="submit" name="submit" class="btn btn-orange">Оставить заявку</button>
+				<p>100% конфиденциальность личных данных</p>
+				<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    </form>
+</div>
 
 <script src="libs/jquery.min.js"></script>
 <script src="libs/remodal.min.js"></script>
@@ -428,7 +581,14 @@
 <script src="libs/wow.min.js"></script>
 <script src="js/all.js"></script>
 
-<!--
+<script type="text/javascript">
+  window.onload = function () {
+      jQuery("#user-city").text(ymaps.geolocation.city);
+  }
+</script>
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
+
 <script>
     jQuery(document).ready(function( $ ) {
         $('.counter').counterUp({
@@ -437,7 +597,7 @@
         });
     });
 </script>
--->
+
 <script>
 	new WOW().init();
 </script>

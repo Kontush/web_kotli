@@ -63,18 +63,25 @@
 
 	.swiper-button-prev,
 	.swiper-button-next {
-	  position: absolute;
-	  top: 70%;
-	  width: 64px;
-	  height: 64px;
-	  margin-top: -22px;
-	  z-index: 10;
-	  cursor: pointer;
-	  -moz-background-size: 64px 64px;
-	  -webkit-background-size: 64px 64px;
-	  background-size: 64px 64px;
-	  background-position: center;
-	  background-repeat: no-repeat;
+		position: absolute;
+		top: 70%;
+		width: 64px;
+		height: 64px;
+		margin-top: -22px;
+		z-index: 10;
+		cursor: pointer;
+		-moz-background-size: 64px 64px;
+		-webkit-background-size: 64px 64px;
+		background-size: 64px 64px;
+		background-position: center;
+		background-repeat: no-repeat;
+		@media @mobile {
+				display: none;	
+		}
+		@media @tablet {
+			display: block;	
+		}
+		
 	}
 	.swiper-wrapper {
 		

@@ -55,14 +55,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 10px;
-  padding: 35px;
+  
 
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 
-  color: #2b2e38;
-  background: #fff;
+  
 }
 
 .remodal.remodal-is-opening,
@@ -95,7 +93,7 @@
 .remodal-close {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 
   display: block;
   overflow: visible;
@@ -295,9 +293,9 @@
 /* Media queries
    ========================================================================== */
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 350px) {
   .remodal {
-    max-width: 700px;
+    max-width: 350px;
   }
 }
 
@@ -309,5 +307,5 @@
 }
 
 .lt-ie9 .remodal {
-  width: 700px;
+  width: 350px;
 }

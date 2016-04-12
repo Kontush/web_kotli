@@ -1,6 +1,15 @@
 .header {
-	margin-bottom: 150px;
-
+	
+	@media @mobile {
+		margin-bottom: 0px;
+	}
+	@media @tablet {
+		margin-bottom: 130px;
+	}
+	
+	@media @desktop-xl {
+		margin-bottom: 150px;
+	}
 	&__baground {
 		width: 100%;
 	    max-height: 660px;  
@@ -131,7 +140,7 @@
 					color: #d2b9aa;
 					text-transform: uppercase;
 					&:hover {
-						text-decoration: underline;
+						color: #fff;
 					}
 					@media @mobile {
 						font-size: 9px;
@@ -143,9 +152,13 @@
 					@media @desktop {
 						font-size: 13px;
 					}
-					a:visited {
-					    color: #fff;
+					
+					&.active {
+						color: #fff;
+				    	text-decoration: underline;
 					}
+					    
+					
 			}
 			}
 		}
@@ -176,27 +189,32 @@
 		}
 			
 		&-mid {
-			display: inline-block;
-			vertical-align: top;
-			padding-left: 45px;
+			
+			
 			
 			@media @mobile {
 				width: 385px;
 				text-align: center;
+				margin: 0 auto;
 			}
 			@media @tablet {
+				padding-left: 45px;
 				width: 580px;
 			}
 			@media @desktop {
+				display: inline-block;
+				vertical-align: top;
 				text-align: left;
 			}
 			h1 {
-				padding-top: 80px;
+				
 				margin: 0;
 				@media @mobile {
+					padding-top: 30px;
 					font-size: 30px;
 				}
 				@media @tablet {
+					padding-top: 80px;
 					font-size: 60px;
 				}
 				span {
@@ -302,6 +320,7 @@
 			background: #e64308;
 			padding: 45px 0 45px 0;
 			height: auto;
+			
 
 			.header-bot-text {
 				width: 700px;
@@ -371,14 +390,14 @@
 				vertical-align: top;
 				margin-left: 30px;
 				@media @mobile {
-					float: left;
-				}
-				@media @tablet {
-					float: left;
-				}
-				@media @desktop {
-					float: right;
-				}
+						float: left;
+					}
+					@media @tablet {
+						float: left;
+					}
+					@media @desktop {
+						float: right;
+					}
 				
 				.btn-yellow {
 					margin-top: 5px;
@@ -403,4 +422,131 @@
 
 	
 	}
+
+}
+.my-remodal {
+		width: 350px;
+		background: #c7c0c0;
+		padding: 30px 17px;
+		border-radius: 5px;
+		h2 {
+			font-size: 15px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			text-transform: none;
+			text-align: center;
+
+		}
+		.input {
+			width: 313px;
+		    height: 51px;
+		    background: #fff;
+		    border: none;
+		    color: #7a7a7a;
+		    padding: 18px 18px;
+		    outline: none;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    line-height: 1.4;
+			margin-bottom: 9px;
+			border-radius: 3px;
+		   
+		}
+		.input::-webkit-input-placeholder {
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 15px;
+		    font-weight: 400;
+		    color: #7a7a7a !important;
+		}
+		.input::-moz-placeholder {
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 15px;
+		    font-weight: 400;
+		    color: #7a7a7a !important;
+		}
+		.input:-moz-placeholder {
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 15px;
+		    font-weight: 400;
+		    color: #7a7a7a !important;
+		}
+		.input:-ms-input-placeholder {
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 15px;
+		    font-weight: 400;
+		    color: #7a7a7a !important;
+		}
+		.input:focus::-webkit-input-placeholder,
+		textarea:focus::-webkit-input-placeholder {
+		  opacity: 0;
+		  transition: opacity 0.3s ease;
+		}
+		.input:focus::-moz-placeholder,
+		textarea:focus::-moz-placeholder {
+		  opacity: 0;
+		  transition: opacity 0.3s ease;
+		}
+		.input:focus:-moz-placeholder,
+		textarea:focus:-moz-placeholder {
+		  opacity: 0;
+		  transition: opacity 0.3s ease;
+		}
+		.input:focus:-ms-input-placeholder,
+		textarea:focus:-ms-input-placeholder {
+		  opacity: 0;
+		  transition: opacity 0.3s ease;
+		}
+		.btn-orange {
+			width: 313px;
+			height: 61px;
+			font-size: 25px;
+			font-weight: 400;
+			color: #fff !important;
+			line-height: 61px;
+			background: #e64408;
+			border-radius: 5px;
+			border-bottom: 1px solid #982d0b;
+			margin: 0 auto;
+			margin-top: 25px;
+			margin-bottom: 10px;
+
+			&:hover {
+				background: #b6430b;
+				border: none;
+			}
+		}
+		p {
+			font-size: 13px;
+		}
+}
+.thanks-headline {
+	h1 {
+		@media @mobile {
+			font-size: 30px;
+		}
+		@media @tablet {	
+			font-size: 50px;
+		}
+		@media @desktop {
+			font-size: 70px;
+		}
+		@media @desktop-xl {
+			font-size: 90px;
+		}
+	}
+	h2 {
+		@media @mobile {
+			font-size: 25px;
+		}
+		@media @tablet {	
+			font-size: 30px;
+		}
+		@media @desktop {
+			font-size: 40px;
+		}
+		@media @desktop-xl {
+			font-size: 50px;
+		}
+	}
+	
 }
